@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Run notification step
         run: |
-          curl -X POST -w "%{http_code}\n"\
+          curl -X POST -w "%{http_code}\n" \
           -H "Authorization: Bearer ${{ secrets.PORTFOLIO_TOKEN }}" \
           -H "Accept: application/vnd.github+json" \
           -H "X-GitHub-Api-Version: 2022-11-28" \
