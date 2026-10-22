@@ -16,6 +16,7 @@ jobs:
         with:
           client-id: ${{ vars.PORTFOLIO_CLIENT_ID }}
           private-key: ${{ secrets.PORTFOLIO_APP_PRIVATE_KEY }}
+          owner: Dron3xx-End-to-End
       - name: Run notification step
         run: |
           curl -X POST -w "%{http_code}\n" \
